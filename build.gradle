@@ -1,4 +1,5 @@
 plugins {
+    id "core"
     id "idea"
     id "org.ajoberstar.grgit" version "1.4.2"  // "1.5.0-milestone.2"
     id "nebula.gradle-git-scm" version "3.0.1"
