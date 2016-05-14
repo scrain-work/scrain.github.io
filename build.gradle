@@ -1,0 +1,17 @@
+plugins {
+    id "idea"
+    id "org.ajoberstar.grgit" version "1.4.2"  // "1.5.0-milestone.2"
+    id "nebula.gradle-git-scm" version "3.0.1"
+    id 'nebula.nebula-release' version '4.0.1'
+}
+
+// import org.ajoberstar.grgit.*
+
+// ext.repo = Grgit.open(project.file('.'))
+
+
+task push {
+    doLast {
+        grgit.push()
+    }
+}
